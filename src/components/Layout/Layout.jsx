@@ -4,7 +4,7 @@ import './Layout.css'
 
 const Layout = () => {
   return (
-    <div className='App'>
+    <div className="page">
       <Navbar />
       <Outlet />
     </div>
