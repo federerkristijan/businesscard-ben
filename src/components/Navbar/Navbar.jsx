@@ -1,15 +1,36 @@
 import React from "react";
 import bootstrap from "bootstrap";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav class="navbar bg-light">
-      <div class="container-fluid">
-        <a href="./Home">Home</a>
-        <a href="./About">About Me</a>
-        <a href="./Work">How I Work</a>
-        <a href="./Contact">Contact Me</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="nav-container">
+        <NavLink
+         to="/"
+         className="home-link"
+          >
+          Home
+        </NavLink>
+        <NavLink
+          to="/About"
+          className="about-link"
+          >
+          About me
+        </NavLink>
+        <NavLink
+          to="/Work"
+          className="work-link"
+          >
+          How I work
+        </NavLink>
+        <NavLink
+          to="/Contact"
+          className="contact-link"
+          >
+          Contact me
+        </NavLink>
       </div>
     </nav>
   );
