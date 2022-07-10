@@ -13,6 +13,6 @@
   display: contents;
 }
 
-.a {
-  color: red;
+.nav-container a {
+  text-decoration: none;
 }
