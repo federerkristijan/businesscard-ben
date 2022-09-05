@@ -1,18 +1,27 @@
 .navbar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 10vh;
-  border: 1px solid red;
+  background: #DA7EE2;
 }
 
 .nav-container {
-  border: 1px solid green;
   margin: 1rem;
   display: contents;
 }
 
-.nav-container a {
+.nav-logo {
+  margin-left: 2rem;
+}
+
+.nav-links {
+  margin-right: 2rem;
+}
+
+a {
   text-decoration: none;
+  color: white;
+  margin: 2rem;
 }

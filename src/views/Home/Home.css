@@ -1,0 +1,19 @@
+.home {
+  padding: 3rem;
+}
+
+.home-card {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+
+.home-img > img {
+  height: 65vh;
+  width: 35vw;
+}
+
+.home-text {
+  /* border: 1px solid blue; */
+  margin: 1rem 4rem;
+}
