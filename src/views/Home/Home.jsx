@@ -1,11 +1,16 @@
 import React from "react";
+
+import Ben from "../../assets/images/ben.jpg";
 import "./Home.css";
+
 
 const Home = () => {
   return (
     <div className="Home">
       <div className="card">
-        <div className="home-img">{/* here comes img */}</div>
+        <div className="home-img">
+          <img src={Ben} alt="home-card" />
+        </div>
         <div className="home-text">
           <h1>Hi home, I'm dad</h1>
           <p>
