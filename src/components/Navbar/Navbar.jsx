@@ -6,12 +6,15 @@ const Navbar = () => {
   return (
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="nav-container">
+        <div className="navlogo">
         <NavLink
          to="/"
          className="home-link"
           >
-          Home
+          <
         </NavLink>
+        </div>
+        <div className="navlinks">
         <NavLink
           to="/About"
           className="about-link"
@@ -30,6 +33,7 @@ const Navbar = () => {
           >
           Contact me
         </NavLink>
+        </div>
       </div>
     </nav>
   );

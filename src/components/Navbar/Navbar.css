@@ -5,6 +5,7 @@
   width: 100%;
   height: 10vh;
   border: 1px solid red;
+  background: #DA7EE2;
 }
 
 .nav-container {
@@ -15,4 +16,8 @@
 
 .nav-container a {
   text-decoration: none;
+}
+
+a {
+  color: white;
 }
