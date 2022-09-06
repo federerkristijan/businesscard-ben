@@ -1,14 +1,16 @@
 import React from "react";
 import { Button } from "bootstrap";
 
+import './Contact.css';
+
 const Contact = () => {
   return (
-    <div className="Contact">
+    <div className="contact">
       <div className="title">Want to work with me?</div>
       <div className="form">
         <form>
           <div class="form-group">
-            <label for="name">Example label</label>
+            {/* <label for="name">Example label</label> */}
             <input
               type="text"
               class="form-control"
@@ -17,7 +19,7 @@ const Contact = () => {
             />
           </div>
           <div class="form-group">
-            <label for="email">Email address</label>
+            {/* <label for="email">Email address</label> */}
             <input
               type="email"
               class="form-control"
@@ -26,11 +28,12 @@ const Contact = () => {
             />
           </div>
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">What</label>
+            {/* <label for="exampleFormControlTextarea1">What</label> */}
             <textarea
               class="form-control"
               id="exampleFormControlTextarea1"
               rows="3"
+              placeholder="What"
             ></textarea>
           </div>
           <button type="submit" class="btn btn-primary mb-2">Contact me</button>
