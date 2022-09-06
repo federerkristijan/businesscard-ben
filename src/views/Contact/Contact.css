@@ -3,9 +3,35 @@
 }
 
 .title {
-  padding: 4rem;
+  margin-left: 8rem;
+  margin-top: 3rem;
+  float: left;
+  font-size: 24px;
 }
 
 .form {
-  max-width: 600px;
+  float: right;
+  margin-right: 28rem;
+  margin-top: 4rem;
+}
+
+input {
+  height: 7vh;
+  min-width: 25vw;
+  margin: 1rem;
+}
+
+textarea {
+  height: 25vh;
+  min-width: 25vw;
+}
+
+button {
+  height: 5vh;
+  min-width: 12vw;
+  background: #DA7EE2;
+  color: white;
+  margin: 1rem;
+  border-radius: 7%;
+  border: none;
 }
