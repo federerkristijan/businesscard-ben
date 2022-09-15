@@ -1,6 +1,6 @@
 export default {
-  title: 'Home',
-  name: 'home',
+  title: 'About',
+  name: 'about',
   type: 'document',
   fields: [
     {
@@ -12,14 +12,6 @@ export default {
       title: 'Text',
       name: 'text',
       type: 'text'
-    },
-    {
-      title: 'Image',
-      name: 'image',
-      type: 'image',
-      options: {
-        hotspot: true
-      }
     }
   ]
 }

@@ -18,19 +18,19 @@ const Navbar = () => {
         </div>
         <div className="nav-links">
         <NavLink
-          to="/About"
+          to="/about"
           className="about-link"
           >
           Bio
         </NavLink>
         <NavLink
-          to="/Work"
+          to="/work"
           className="work-link"
           >
           How I work
         </NavLink>
         <NavLink
-          to="/Contact"
+          to="/contact"
           className="contact-link"
           >
           Contact me
