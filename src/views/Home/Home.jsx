@@ -1,33 +1,36 @@
-import React from "react";
-
-import Ben from "../../assets/images/ben.jpg";
+import React, { useEffect, useState } from "react";
+import sanityClient from "../../lib/client";
 import "./Home.css";
 
 
 const Home = () => {
+  const [home, setHome] = useState(null);
+
+  useEffect(() => {
+    sanityClient
+    .fetch(
+      `*[_type == "home"] | order(_createdAt asc) {
+        title,
+        text,
+        image
+      }`
+    )
+    .then((data) => setHome(data))
+    .catch(console.error);
+  }, []);
+
   return (
     <div className="home">
-      <div className="home-card">
+      {home && home.map((item) => (
+      <div className="home-card" key={item.title}>
         <div className="home-img">
-          <img src={Ben} alt="home-card" />
+          {item.image}
         </div>
         <div className="home-text">
-          <h1>Hi home, I'm dad</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-            mattis vulputate enim nulla. Sit amet purus gravida quis blandit
-            turpis. Sit amet massa vitae tortor condimentum lacinia quis. Mattis
-            rhoncus urna neque viverra justo nec ultrices. Euismod quis viverra
-            nibh cras pulvinar mattis. Cursus metus aliquam eleifend mi in nulla
-            posuere sollicitudin aliquam. Augue mauris augue neque gravida in.
-            Neque gravida in fermentum et sollicitudin ac. Cursus turpis massa
-            tincidunt dui ut. Consectetur purus ut faucibus pulvinar elementum.
-            Quam id leo in vitae turpis. Aliquet lectus proin nibh nisl. Risus
-            pretium quam vulputate dignissim suspendisse.
-          </p>
+          <h1>{item.title}</h1>
+          <p>{item.text}</p>
         </div>
-      </div>
+      </div>))}
     </div>
   );
 };
