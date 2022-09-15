@@ -1,10 +1,18 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../../lib/client";
+import imageUrlBuilder from "@sanity/image-url";
+
 import "./Home.css";
 
 
 const Home = () => {
   const [home, setHome] = useState(null);
+
+  const builder = imageUrlBuilder(sanityClient);
+
+  function urlFor(source) {
+    return builder.image(source);
+  }
 
   useEffect(() => {
     sanityClient
@@ -24,7 +32,10 @@ const Home = () => {
       {home && home.map((item) => (
       <div className="home-card" key={item.title}>
         <div className="home-img">
-          {item.image}
+          <img
+          src={urlFor(item.image).width(200).url()}
+          alt={item.title}
+          />
         </div>
         <div className="home-text">
           <h1>{item.title}</h1>
