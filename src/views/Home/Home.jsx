@@ -33,7 +33,7 @@ const Home = () => {
       <div className="home-card" key={item.title}>
         <div className="home-img">
           <img
-          src={urlFor(item.image).width(200).url()}
+          src={urlFor(item.image).width(220).url()}
           alt={item.title}
           />
         </div>

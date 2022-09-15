@@ -1,19 +1,23 @@
 .home {
+  max-height: 70vh;
   padding: 3rem;
 }
 
 .home-card {
   display: flex;
   justify-content: center;
-  /* border: 1px solid red; */
+  align-items: center;
 }
 
-.home-img > img {
-  height: 65vh;
-  width: 35vw;
+.home-img {
+  min-width: 38vw;
+}
+
+.home-img img {
+  max-height: 60vh;
+  width: 33vw;
 }
 
 .home-text {
-  /* border: 1px solid blue; */
-  margin: 1rem 4rem;
+  padding: 0rem 4rem;
 }
