@@ -1,0 +1,11 @@
+.work-title {
+  display: block;
+  float: left;
+  padding: 3rem;
+}
+
+.work-text {
+  float: left;
+  text-align: left;
+  padding: 3rem;
+}
