@@ -37,17 +37,23 @@ const About = () => {
         about.map((item) => (
           <div className="about-data" key={item.title}>
             <div className="about-image">
-            {item.image && (<img
-          src={urlFor(item.image).width(220).url()}
-          alt={item.title}
-          />)}
+              {item.image && (
+                <img
+                  src={urlFor(item.image).width(220).url()}
+                  alt={item.title}
+                />
+              )}
             </div>
             <div className="about-text">
               <h3>{item.title}</h3>
               <span>{item.text}</span>
             </div>
             <div className="about-link">
-              {item.href && (<a href={item.href} target="_blank">{item.href}</a>)}
+              {item.href && (
+                <a href={item.href} target="_blank">
+                  {item.href}
+                </a>
+              )}
             </div>
           </div>
         ))}
