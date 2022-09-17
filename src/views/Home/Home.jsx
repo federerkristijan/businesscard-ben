@@ -19,7 +19,8 @@ const Home = () => {
     .fetch(
       `*[_type == "home"] | order(_createdAt asc) {
         title,
-        text
+        text,
+        image
       }`
     )
     .then((data) => setHome(data))
@@ -30,12 +31,13 @@ const Home = () => {
     <div className="home">
       {home && home.map((item) => (
       <div className="home-card" key={item.title}>
-        {/* <div className="home-img">
-          <img
+        <div className="home-img">
+          {/* checking if there's na iamge, to avoid causing errors */}
+          {item.image && (<img
           src={urlFor(item.image).width(220).url()}
           alt={item.title}
-          />
-        </div> */}
+          />)}
+        </div>
         <div className="home-text">
           <h1>{item.title}</h1>
           <p>{item.text}</p>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import sanityClient from "../../lib/client";
+import imageUrlBuilder from "@sanity/image-url";
 
 import "./Work.css";
 
@@ -11,7 +12,9 @@ const Work = () => {
       .fetch(
         `*[_type == "work"] | order(_createdT asc) {
         title,
-        text
+        text,
+        image,
+        href
       }`
       )
       .then((data) => setWork(data))
