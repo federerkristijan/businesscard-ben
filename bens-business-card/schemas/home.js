@@ -12,14 +12,6 @@ export default {
       title: 'Text',
       name: 'text',
       type: 'text'
-    },
-    {
-      title: 'Image',
-      name: 'image',
-      type: 'image',
-      options: {
-        hotspot: true
-      }
     }
   ]
 }

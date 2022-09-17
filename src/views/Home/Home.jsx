@@ -19,8 +19,7 @@ const Home = () => {
     .fetch(
       `*[_type == "home"] | order(_createdAt asc) {
         title,
-        text,
-        image
+        text
       }`
     )
     .then((data) => setHome(data))
@@ -31,12 +30,12 @@ const Home = () => {
     <div className="home">
       {home && home.map((item) => (
       <div className="home-card" key={item.title}>
-        <div className="home-img">
+        {/* <div className="home-img">
           <img
           src={urlFor(item.image).width(220).url()}
           alt={item.title}
           />
-        </div>
+        </div> */}
         <div className="home-text">
           <h1>{item.title}</h1>
           <p>{item.text}</p>
