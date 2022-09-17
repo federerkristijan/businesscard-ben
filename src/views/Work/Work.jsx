@@ -7,6 +7,12 @@ import "./Work.css";
 const Work = () => {
   const [work, setWork] = useState(null);
 
+  const builder = imageUrlBuilder(sanityClient);
+
+  function urlFor(source) {
+    return builder.image(source);
+  }
+
   useEffect(() => {
     sanityClient
       .fetch(
