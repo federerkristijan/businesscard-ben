@@ -1,11 +1,12 @@
 .work-title {
   display: block;
   float: left;
-  padding: 3rem;
+  margin-left: 5rem;
 }
 
 .work-text {
   float: left;
   text-align: left;
-  padding: 3rem;
+  padding: 2rem 10rem 0 3rem;
+  margin: 0 3rem;
 }
