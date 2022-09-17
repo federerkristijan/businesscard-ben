@@ -20,14 +20,18 @@ const Work = () => {
 
   return (
     <div className="work">
-      <div className="work-hreader">
+      <div className="work-header">
         <h1>How I Work</h1>
       </div>
       {work &&
         work.map((item) => (
           <div className="work-data" key={item.title}>
-            <h2>{item.title}</h2>
-            <span>{item.text}</span>
+            <div className="work-title">
+              <h2>{item.title}</h2>
+            </div>
+            <div className="work-text">
+              <span>{item.text}</span>
+            </div>
           </div>
         ))}
     </div>
