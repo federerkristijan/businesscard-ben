@@ -1,11 +1,10 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 import './Contact.css';
 
 const Contact = () => {
   const form = useRef();
-  const [done, setDone] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -22,7 +21,6 @@ const Contact = () => {
         (result) => {
           alert("Message successfully sent!");
           window.location.reload(false);
-          setDone(true);
           form.reset(true);
         },
         (error) => {
@@ -35,7 +33,7 @@ const Contact = () => {
     <div className="contact">
       <div className="title">Want to work with me?</div>
       <div className="form">
-        <form ref={form}>
+        <form ref={form} onSubmit={sendEmail}>
           <div class="form-group">
             <input
               type="text"

@@ -50,7 +50,7 @@ const About = () => {
             </div>
             <div className="about-link">
               {item.href && (
-                <a href={item.href} target="_blank">
+                <a href={item.href} target="_blank" without rel="noreferrer">
                   {item.href}
                 </a>
               )}
