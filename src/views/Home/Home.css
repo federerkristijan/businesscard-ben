@@ -7,17 +7,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.home-img {
-  min-width: 38vw;
-}
-
-.home-img img {
-  max-height: 60vh;
-  width: 33vw;
+  margin: 3rem;
 }
 
 .home-text {
-  padding: 0rem 4rem;
+  padding: 0rem 2rem;
+  text-align: justify;
+}
+
+@media screen and (max-width: 520px) {
+  .home {
+    padding: 1rem;
+  }
+
+  .home-card {
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+  }
+
+  .home-text {
+    padding: 0;
+  }
 }

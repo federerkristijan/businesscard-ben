@@ -2,3 +2,19 @@
   padding: 6rem;
   text-align: justify;
 }
+
+@media screen and (max-width: 520px) {
+  .about {
+    padding: 1rem;
+  }
+
+  .about-data {
+    flex-direction: column;
+    padding: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-text {
+    padding: 0;
+  }
+}

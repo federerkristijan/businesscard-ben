@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-import './Contact.css';
+import "./Contact.css";
 
 const Contact = () => {
   const form = useRef();
@@ -10,12 +10,7 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        "service_id",
-        "contact_form",
-        form.current,
-        "VLLoJzJV3AvC_eGBB"
-      )
+      .sendForm("service_id", "contact_form", form.current, "VLLoJzJV3AvC_eGBB")
 
       .then(
         (result) => {
@@ -31,7 +26,9 @@ const Contact = () => {
 
   return (
     <div className="contact">
-      <div className="title">Want to work with me?</div>
+      <div className="contact-title">
+        <h1>Want to work with me?</h1>
+      </div>
       <div className="form">
         <form ref={form} onSubmit={sendEmail}>
           <div class="form-group">
@@ -61,7 +58,9 @@ const Contact = () => {
               placeholder="What"
             ></textarea>
           </div>
-          <button type="submit" class="btn btn-primary mb-2">Contact me</button>
+          <button type="submit" class="btn btn-primary mb-2">
+            Contact me
+          </button>
         </form>
       </div>
     </div>

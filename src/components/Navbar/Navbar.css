@@ -47,8 +47,8 @@
   .about-link,
   .work-link,
   .contact-link {
-    font-size: 14px;
-    margin: 0.5rem;
+    font-size: 15px;
+    margin: 0.3rem;
     white-space: no-wrap;
   }
 }
