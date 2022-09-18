@@ -1,12 +1,5 @@
-.work-title {
-  display: block;
-  float: left;
-  margin-left: 5rem;
-}
-
 .work-text {
   float: left;
-  text-align: left;
-  padding: 2rem 10rem 0 3rem;
-  margin: 0 3rem;
+  padding: 6rem;
+  text-align: justify;
 }
