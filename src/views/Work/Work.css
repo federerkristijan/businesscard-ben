@@ -1,12 +1,21 @@
-.work-title {
-  display: block;
-  float: left;
-  margin-left: 5rem;
-}
-
 .work-text {
   float: left;
-  text-align: left;
-  padding: 2rem 10rem 0 3rem;
-  margin: 0 3rem;
+  padding: 6rem;
+  text-align: justify;
+}
+
+@media screen and (max-width: 520px) {
+  .work {
+    padding: 1rem;
+  }
+
+  .work-data {
+    flex-direction: column;
+    padding: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .work-text {
+    padding: 0;
+  }
 }

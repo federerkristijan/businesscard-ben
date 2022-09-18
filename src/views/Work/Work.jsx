@@ -43,15 +43,13 @@ const Work = () => {
                 />
               )}
             </div>
-            <div className="work-title">
-              <h2>{item.title}</h2>
-            </div>
             <div className="work-text">
+              <h1>{item.title}</h1>
               <span>{item.text}</span>
             </div>
             <div className="work-link">
               {item.href && (
-                <a href={item.href} target="_blank">
+                <a href={item.href} target="_blank" without rel="noreferrer">
                   {item.href}
                 </a>
               )}

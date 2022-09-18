@@ -2,11 +2,10 @@
   padding-top: 3rem;
 }
 
-.title {
+.contact-title {
   margin-left: 8rem;
   margin-top: 3rem;
   float: left;
-  font-size: 24px;
 }
 
 .form {
@@ -31,7 +30,47 @@ button {
   min-width: 12vw;
   background: #DA7EE2;
   color: white;
-  margin: 1rem;
+  margin-top: 2rem;
   border-radius: 7%;
   border: none;
+}
+
+@media screen and (max-width: 520px) {
+  .contact {
+    padding: 0;
+  }
+
+  .contact-title {
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    font-size: 14px;
+    float: left;
+  }
+
+  .contact-data {
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .form {
+    float: none;
+    margin: 1rem;
+  }
+
+  input {
+    height: 7vh;
+    min-width: 55vw;
+    margin: 1rem;
+  }
+
+  textarea {
+    height: 25vh;
+    min-width: 55vw;
+  }
+
+  .form > ::placeholder {
+    font-size: 14px;
+    color: red;
+  }
 }
