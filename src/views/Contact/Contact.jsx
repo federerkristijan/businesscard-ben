@@ -31,34 +31,34 @@ const Contact = () => {
       </div>
       <div className="form">
         <form ref={form} onSubmit={sendEmail}>
-          <div class="form-group">
+          <div className="form-group">
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               id="name"
               name="user_name"
               placeholder="Your name"
             />
           </div>
-          <div class="form-group">
+          <div className="form-group">
             <input
               type="email"
-              class="form-control"
+              className="form-control"
               id="email"
               name="user_email"
               placeholder="name@example.com"
             />
           </div>
-          <div class="form-group">
+          <div className="form-group">
             <textarea
-              class="form-control"
+              className="form-control"
               id="exampleFormControlTextarea1"
               rows="3"
               name="message"
               placeholder="What"
             ></textarea>
           </div>
-          <button type="submit" class="btn btn-primary mb-2">
+          <button type="submit" className="btn btn-primary mb-2">
             Contact me
           </button>
         </form>

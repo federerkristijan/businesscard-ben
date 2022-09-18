@@ -6,8 +6,8 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="nav-container">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="nav-container">
         <div className="nav-logo">
         <NavLink
          to="/"
