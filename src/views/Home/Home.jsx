@@ -32,7 +32,7 @@ const Home = () => {
       {home && home.map((item) => (
       <div className="home-card" key={item.title}>
         <div className="home-img">
-          {/* checking if there's na iamge, to avoid causing errors */}
+          {/* checking if there's na image, to avoid causing errors */}
           {item.image && (<img
           src={urlFor(item.image).width(220).url()}
           alt={item.title}
