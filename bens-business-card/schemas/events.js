@@ -4,25 +4,25 @@ export default {
   type: 'document',
   fields: [
     {
-      name: 'eventTitle',
-      title: 'Event Title',
+      name: 'eventsTitle',
+      title: 'Events Title',
       type: 'string'
     },
     {
-      name: 'eventText',
-      title: 'Event Text',
+      name: 'eventsText',
+      title: 'Events Text',
       type: 'text'
     },
     {
-      name: 'eventImage',
-      title: 'Event Image',
+      name: 'eventsImage',
+      title: 'Events Image',
       type: 'image',
       options: {
         hotspot: true
       }
     },
     {
-      name: 'eventLink',
+      name: 'eventsLink',
       title: 'Event Link',
       type: 'url'
     }
