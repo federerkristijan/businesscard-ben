@@ -30,6 +30,12 @@ const Navbar = () => {
           How I work
         </NavLink>
         <NavLink
+          to="/events"
+          className="events-link"
+          >
+          Events
+        </NavLink>
+        <NavLink
           to="/contact"
           className="contact-link"
           >

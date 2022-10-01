@@ -14,6 +14,14 @@
   margin-top: 4rem;
 }
 
+.form-group {
+  display: inline-grid;
+}
+
+label {
+  margin: 0.5rem;
+}
+
 input {
   height: 7vh;
   min-width: 25vw;
@@ -23,6 +31,7 @@ input {
 textarea {
   height: 25vh;
   min-width: 25vw;
+  margin-top: 0.5rem;
 }
 
 button {
@@ -41,10 +50,13 @@ button {
   }
 
   .contact-title {
-    margin-left: 1.5rem;
-    margin-top: 2rem;
-    font-size: 14px;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
     float: left;
+  }
+
+  h1 {
+    font-size: 26px;
   }
 
   .contact-data {
@@ -65,12 +77,7 @@ button {
   }
 
   textarea {
-    height: 25vh;
+    height: 22vh;
     min-width: 55vw;
-  }
-
-  .form > ::placeholder {
-    font-size: 14px;
-    color: red;
   }
 }

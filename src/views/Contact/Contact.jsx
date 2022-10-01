@@ -34,6 +34,7 @@ const Contact = () => {
       <div className="form">
         <form ref={form} onSubmit={sendEmail}>
           <div className="form-group">
+            <label for="name">Your name</label>
             <input
               type="text"
               className="form-control"
@@ -43,6 +44,7 @@ const Contact = () => {
             />
           </div>
           <div className="form-group">
+            <label for="email">Your email</label>
             <input
               type="email"
               className="form-control"
@@ -52,18 +54,21 @@ const Contact = () => {
             />
           </div>
           <div className="form-group">
+            <label for="message">Your message</label>
             <textarea
               className="form-control"
               id="exampleFormControlTextarea1"
               rows="3"
               name="message"
-              placeholder="What"
+              placeholder="Your message to me"
             ></textarea>
           </div>
+          <div className="button">
           <button type="submit" className="btn btn-primary mb-2">
             Contact me
           </button>
           <span>{done && "Thank you for contacting me"}</span>
+          </div>
         </form>
       </div>
     </div>

@@ -1,7 +1,16 @@
+.work-header {
+  margin-top: 4rem;
+}
+
 .work-text {
   float: left;
-  padding: 6rem;
+  padding: 4rem;
   text-align: justify;
+  margin: 0 12rem 0 12rem;
+}
+
+li {
+  list-style-type: none;
 }
 
 @media screen and (max-width: 520px) {
@@ -17,5 +26,6 @@
 
   .work-text {
     padding: 0;
+    margin: 0 0.5rem 0 0.5rem;
   }
 }
