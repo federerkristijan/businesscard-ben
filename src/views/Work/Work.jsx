@@ -16,7 +16,7 @@ const Work = () => {
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[_type == "work"] | order(_createdT asc) {
+        `*[_type == "work"] | order(_createdAt asc) {
         title,
         text,
         image,

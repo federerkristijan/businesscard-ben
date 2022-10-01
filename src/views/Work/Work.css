@@ -1,7 +1,12 @@
 .work-text {
   float: left;
-  padding: 6rem;
+  padding: 4rem;
   text-align: justify;
+  margin: 0 2rem 0 2rem;
+}
+
+li {
+  list-style-type: none;
 }
 
 @media screen and (max-width: 520px) {
