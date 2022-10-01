@@ -5,6 +5,7 @@ import Home from './views/Home/Home';
 import About from './views/About/About';
 import Work from './views/Work/Work';
 import Contact from './views/Contact/Contact';
+import Events from './views/Events/Events';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/work' element={<Work />} />
+            <Route path='/events' element={<Events />} />
             <Route path='/contact' element={<Contact />} />
           </Route>
         </Routes>

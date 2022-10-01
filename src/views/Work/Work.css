@@ -1,8 +1,12 @@
+.work-header {
+  margin-top: 4rem;
+}
+
 .work-text {
   float: left;
   padding: 4rem;
   text-align: justify;
-  margin: 0 2rem 0 2rem;
+  margin: 0 12rem 0 12rem;
 }
 
 li {

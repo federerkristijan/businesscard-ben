@@ -13,14 +13,14 @@
 }
 
 .nav-logo {
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   margin-bottom: 1rem;
 }
 
 .home-link,
 .about-link,
 .work-link,
-.contact-link {
+.contact-link, .events-link {
   text-decoration: none;
   color: #005153;
   margin: 2rem;
@@ -46,7 +46,8 @@
   .home-link,
   .about-link,
   .work-link,
-  .contact-link {
+  .contact-link,
+  .events-link {
     font-size: 15px;
     margin: 0.3rem;
     white-space: no-wrap;
