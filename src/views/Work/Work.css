@@ -26,6 +26,11 @@ li {
 
   .work-text {
     padding: 0;
-    margin: 0 0.5rem 0 0.5rem;
+    margin: 0 0.5rem 4rem 0.5rem;
+  }
+
+  h1 {
+    font-size: 26px;
+    margin-bottom: 2rem;
   }
 }
