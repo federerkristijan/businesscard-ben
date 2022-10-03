@@ -1,5 +1,5 @@
 export default {
-  title: 'Work',
+  title: 'How I Work',
   name: 'work',
   type: 'document',
   fields: [
