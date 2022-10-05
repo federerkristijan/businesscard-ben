@@ -19,6 +19,8 @@ const Events = () => {
         `*[_type == "events"] | order(_createdAt asc) {
         eventsTitle,
         eventsText,
+        eventsAbout,
+        eventsFacilitator,
         eventsImage,
         eventsLink
       }`
@@ -32,9 +34,10 @@ const Events = () => {
       <h1>Events</h1>
       <ul>
         <li>
-          {events && events.map((item) => (
-            <div className="events-data" key={item.eventsTitle}>
-              <div className="events-image">
+          {events &&
+            events.map((item) => (
+              <div className="events-data" key={item.eventsTitle}>
+                <div className="events-image">
                   {item.eventsImage && (
                     <img
                       src={urlFor(item.eventsImage).width(220).url()}
@@ -45,6 +48,12 @@ const Events = () => {
                 <div className="events-text">
                   <h1>{item.eventsTitle}</h1>
                   <span>{item.eventsText}</span>
+                </div>
+                <div className="events-about">
+                  <span>{item.eventsAbout}</span>
+                </div>
+                <div className="events-facilitator">
+                  <span>{item.eventsFacilitator}</span>
                 </div>
                 <div className="events-link">
                   {item.eventsLink && (
@@ -58,8 +67,8 @@ const Events = () => {
                     </a>
                   )}
                 </div>
-            </div>
-          ))}
+              </div>
+            ))}
         </li>
       </ul>
     </div>

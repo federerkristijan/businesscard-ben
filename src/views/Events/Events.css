@@ -5,3 +5,18 @@
 ul {
   padding-inline-start: 0;
 }
+
+.events-text, .events-about, .events-facilitator {
+  text-align: justify;
+  margin: 3rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  float: left;
+  font-size: 22px;
+  margin-left: 1rem;
+}
