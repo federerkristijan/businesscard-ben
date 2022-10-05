@@ -14,6 +14,16 @@ export default {
       type: 'text'
     },
     {
+      name: 'eventsAbout',
+      title: 'Events About',
+      type: 'text'
+    },
+    {
+      name: 'eventsFacilitator',
+      title: 'Events Facilitator',
+      type: 'text'
+    },
+    {
       name: 'eventsImage',
       title: 'Events Image',
       type: 'image',
