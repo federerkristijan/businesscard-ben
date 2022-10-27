@@ -1,22 +1,31 @@
 .events-data {
-  margin: 1.5rem;
+  margin: 5rem;
+  border: 0.5px solid black;
+  border-radius: 9px;
+  padding: 2rem;
+  text-decoration: none;
 }
 
 ul {
   padding-inline-start: 0;
 }
 
-.events-text, .events-about, .events-facilitator {
+.events-text,
+.events-about,
+.events-facilitator {
   text-align: justify;
+  margin: 2rem;
+}
+
+.events-image {
   margin: 3rem;
 }
 
 h1 {
   text-align: center;
+  text-decoration: none;
 }
 
 a {
-  float: left;
-  font-size: 22px;
-  margin-left: 1rem;
+  text-decoration: none;
 }
