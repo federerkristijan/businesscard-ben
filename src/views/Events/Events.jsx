@@ -37,36 +37,31 @@ const Events = () => {
           {events &&
             events.map((item) => (
               <div className="events-data" key={item.eventsTitle}>
-                <div className="events-image">
-                  {item.eventsImage && (
-                    <img
-                      src={urlFor(item.eventsImage).width(220).url()}
-                      alt={item.eventsTitle}
-                    />
-                  )}
-                </div>
-                <div className="events-text">
-                  <h1>{item.eventsTitle}</h1>
-                  <span>{item.eventsText}</span>
-                </div>
-                <div className="events-about">
-                  <span>{item.eventsAbout}</span>
-                </div>
-                <div className="events-facilitator">
-                  <span>{item.eventsFacilitator}</span>
-                </div>
-                <div className="events-link">
-                  {item.eventsLink && (
-                    <a
-                      href={item.eventsLink}
-                      target="_blank"
-                      without
-                      rel="noreferrer"
-                    >
-                      {item.eventsLink}
-                    </a>
-                  )}
-                </div>
+                <a
+                  href={item.eventsLink}
+                  target="_blank"
+                  without
+                  rel="noreferrer"
+                >
+                  <div className="events-image">
+                    {item.eventsImage && (
+                      <img
+                        src={urlFor(item.eventsImage).width(220).url()}
+                        alt={item.eventsTitle}
+                      />
+                    )}
+                  </div>
+                  <div className="events-text">
+                    <h1>{item.eventsTitle}</h1>
+                    <span>{item.eventsText}</span>
+                  </div>
+                  <div className="events-about">
+                    <span>{item.eventsAbout}</span>
+                  </div>
+                  <div className="events-facilitator">
+                    <span>{item.eventsFacilitator}</span>
+                  </div>
+                </a>
               </div>
             ))}
         </li>
