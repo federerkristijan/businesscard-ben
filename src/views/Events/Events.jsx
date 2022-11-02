@@ -52,14 +52,16 @@ const Events = () => {
                     )}
                   </div>
                   <div className="events-text">
-                    <h1>{item.eventsTitle}</h1>
-                    <span>{item.eventsText}</span>
-                  </div>
-                  <div className="events-about">
-                    <span>{item.eventsAbout}</span>
-                  </div>
-                  <div className="events-facilitator">
-                    <span>{item.eventsFacilitator}</span>
+                    <div className="events-description">
+                      <h1>{item.eventsTitle}</h1>
+                      <span>{item.eventsText}</span>
+                    </div>
+                    <div className="events-about">
+                      <span>{item.eventsAbout}</span>
+                    </div>
+                    <div className="events-facilitator">
+                      <span>{item.eventsFacilitator}</span>
+                    </div>
                   </div>
                 </a>
               </div>
