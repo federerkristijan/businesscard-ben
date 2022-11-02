@@ -47,14 +47,16 @@ const Events = () => {
                     <div className="events-image">
                       {item.eventsImage && (
                         <img
-                          src={urlFor(item.eventsImage).width(180).url()}
+                          src={urlFor(item.eventsImage).width(190).url()}
                           alt={item.eventsTitle}
                         />
                       )}
                     </div>
                     <div className="events-text">
+                      <div className="events-title">
+                        <h2>{item.eventsTitle}</h2>
+                      </div>
                       <div className="events-description">
-                        <h1>{item.eventsTitle}</h1>
                         <span>{item.eventsText}</span>
                       </div>
                       <div className="events-about">
