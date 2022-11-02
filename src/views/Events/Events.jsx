@@ -43,23 +43,29 @@ const Events = () => {
                   without
                   rel="noreferrer"
                 >
-                  <div className="events-image">
-                    {item.eventsImage && (
-                      <img
-                        src={urlFor(item.eventsImage).width(220).url()}
-                        alt={item.eventsTitle}
-                      />
-                    )}
-                  </div>
-                  <div className="events-text">
-                    <h1>{item.eventsTitle}</h1>
-                    <span>{item.eventsText}</span>
-                  </div>
-                  <div className="events-about">
-                    <span>{item.eventsAbout}</span>
-                  </div>
-                  <div className="events-facilitator">
-                    <span>{item.eventsFacilitator}</span>
+                  <div className="events-card">
+                    <div className="events-image">
+                      {item.eventsImage && (
+                        <img
+                          src={urlFor(item.eventsImage).width(190).url()}
+                          alt={item.eventsTitle}
+                        />
+                      )}
+                    </div>
+                    <div className="events-text">
+                      <div className="events-title">
+                        <h2>{item.eventsTitle}</h2>
+                      </div>
+                      <div className="events-description">
+                        <span>{item.eventsText}</span>
+                      </div>
+                      <div className="events-about">
+                        <span>{item.eventsAbout}</span>
+                      </div>
+                      <div className="events-facilitator">
+                        <span>{item.eventsFacilitator}</span>
+                      </div>
+                    </div>
                   </div>
                 </a>
               </div>

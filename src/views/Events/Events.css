@@ -1,16 +1,36 @@
 .events-data {
-  margin: 5rem;
+  margin: 3rem 1rem;
   border: 0.5px solid black;
+  box-shadow: 2px 1px 1px rgb(16, 16, 16);
   border-radius: 9px;
   padding: 2rem;
   text-decoration: none;
+  transform: scale(0.9);
+}
+
+.events-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 30vh;
 }
 
 ul {
   padding-inline-start: 0;
 }
 
-.events-text,
+.events-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  width: 70vw;
+}
+
+.events-description,
 .events-about,
 .events-facilitator {
   text-align: justify;
